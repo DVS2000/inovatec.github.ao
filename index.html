@@ -417,6 +417,30 @@
                         <a href="#contacts" data-i18n="contacts">Contactos</a>
                       </li>
 
+                      <li class="li_translator">
+                        <div class="language-container">
+                          <select
+                            id="languageSwitcher1"
+                            class="custom-select"
+                            onchange="changeLanguage1()"
+                          >
+                            <option
+                              value="en"
+                              data-image="images/bandeira-eua.png"
+                            >
+                              English
+                            </option>
+                            <option
+                              value="pt"
+                              data-image="images/bandeira-portugal.png"
+                              selected
+                            >
+                              Português
+                            </option>
+                          </select>
+                        </div>
+                      </li>
+
                       <!-- contacts -->
                     </ul>
                     <div class="language-container">
@@ -2021,6 +2045,26 @@
       font-size: 12px;
       font-weight: 500;
       text-transform: capitalize !important;
+    }
+
+    .li_translator {
+      display: none !important;
+    }
+
+    @media (max-width: 1199px) {
+      .li_translator {
+        display: block !important;
+      }
+
+      .custom-select {
+        border: 1px solid #fff !important;
+      }
+
+      .page_header_side ~ .page_topline [class*="container"],
+      .page_header_side ~ .page_toplogo [class*="container"],
+      .page_header_side ~ div .page_header [class*="container"] {
+        padding-left: 0px !important;
+      }
     }
   </style>
 </html>

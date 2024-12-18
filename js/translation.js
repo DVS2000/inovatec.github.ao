@@ -244,6 +244,21 @@ function changeLanguage() {
   }
 }
 
+function changeLanguage1() {
+  const languageSelect = document.getElementById("languageSwitcher1");
+  const selectedLanguage = languageSelect.value;
+
+  if (translations[selectedLanguage]) {
+    currentLanguage = selectedLanguage;
+    updateTexts();
+    const selectedOption = languageSelect.options[languageSelect.selectedIndex];
+    const imagePath = selectedOption.getAttribute("data-image");
+    languageSelect.style.backgroundImage = `url(${imagePath})`;
+  } else {
+    console.error(`Idioma não suportado: ${selectedLanguage}`);
+  }
+}
+
 // Inicializa o i18n com o idioma padrão
 document.addEventListener("DOMContentLoaded", () => {
   updateTexts();
