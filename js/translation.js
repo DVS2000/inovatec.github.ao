@@ -213,7 +213,7 @@ const translations = {
   },
 };
 
-let currentLanguage = "en";
+let currentLanguage = "pt";
 
 // Atualiza os textos no HTML
 function updateTexts() {
