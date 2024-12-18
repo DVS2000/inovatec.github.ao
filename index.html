@@ -1,545 +1,706 @@
 <!DOCTYPE html>
 
 <html class="no-js" lang="pt-PT">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-	<title>Inovatec, Mais que inovação, Tecnologia</title>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no">
+  <head>
+    <title data-i18n="title">Inovatec, Mais que inovação, Tecnologia</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/font-awesome5.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
-	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome5.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.js"></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="js/translation.js"></script>
+  </head>
 
-</head>
+  <body>
+    <!--[if lt IE 9]>
+      <div class="bg-danger text-center">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/" class="color-main"
+          >upgrade your browser</a
+        >
+        to improve your experience.
+      </div>
+    <![endif]-->
 
-<body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
+    <div class="preloader">
+      <div class="preloader_image"></div>
+    </div>
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
-	</div>
+    <!-- search modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="search_modal"
+      id="search_modal"
+    >
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="widget widget_search">
+        <form method="get" class="searchform search-form" action="/">
+          <div class="form-group">
+            <input
+              type="text"
+              value=""
+              name="search"
+              class="form-control"
+              placeholder="Search keyword"
+              id="modal-search-input"
+            />
+          </div>
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    </div>
+    <div id="team-form" class="ds modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="form-wrapper ls rounded">
+              <form class="contact-form" method="post" action="/">
+                <div class="row c-mb-20">
+                  <div class="col-12 form-title text-center form-builder-item">
+                    <div class="header title">
+                      <h4><span class="thin">Contact</span> me</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row c-mb-20">
+                  <div class="col-sm-12">
+                    <div class="form-group has-placeholder">
+                      <label for="name333"
+                        >Full Name <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        aria-required="true"
+                        size="30"
+                        value=""
+                        name="name"
+                        id="name333"
+                        class="form-control"
+                        placeholder="Your name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group has-placeholder">
+                      <label for="phone35533"
+                        >Email address<span class="required">*</span></label
+                      >
+                      <input
+                        type="tel"
+                        aria-required="true"
+                        size="30"
+                        name="phone"
+                        id="phone35533"
+                        class="form-control"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row c-mb-20">
+                  <div class="col-sm-12">
+                    <div class="form-group has-placeholder">
+                      <label for="message333">Message</label>
+                      <textarea
+                        aria-required="true"
+                        rows="3"
+                        cols="45"
+                        name="message"
+                        id="message333"
+                        class="form-control"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row c-mb-20">
+                  <div class="col-sm-12 mb-0 mt-10 text-center">
+                    <div class="form-group">
+                      <input
+                        class="btn btn-gradient"
+                        type="submit"
+                        value="Contact me"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
-						id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-	<div id="team-form" class="ds modal">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 offset-md-3">
-					<div class="form-wrapper ls rounded">
-						<form class="contact-form" method="post" action="/">
-							<div class="row c-mb-20">
-								<div class="col-12 form-title text-center form-builder-item">
-									<div class="header title">
-										<h4><span class="thin">Contact</span> me</h4>
-									</div>
-								</div>
-							</div>
-							<div class="row c-mb-20">
-								<div class="col-sm-12">
-									<div class="form-group has-placeholder">
-										<label for="name333">Full Name <span class="required">*</span></label>
-										<input type="text" aria-required="true" size="30" value="" name="name"
-											id="name333" class="form-control" placeholder="Your name">
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group has-placeholder">
-										<label for="phone35533">Email address<span class="required">*</span></label>
-										<input type="tel" aria-required="true" size="30" name="phone" id="phone35533"
-											class="form-control" placeholder="Phone Number">
-									</div>
-								</div>
-							</div>
-							<div class="row c-mb-20">
-								<div class="col-sm-12">
-									<div class="form-group has-placeholder">
-										<label for="message333">Message</label>
-										<textarea aria-required="true" rows="3" cols="45" name="message" id="message333"
-											class="form-control" placeholder="Message"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row c-mb-20">
-								<div class="col-sm-12 mb-0 mt-10 text-center">
-									<div class="form-group">
-										<input class="btn btn-gradient" type="submit" value="Contact me">
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-
-				</div>
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+      <div class="fw-messages-wrap ls p-normal">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--
 		<ul class="list-unstyled">
 			<li>Message To User</li>
 		</ul>
 		-->
+      </div>
+    </div>
+    <!-- eof .modal -->
 
-		</div>
-	</div><!-- eof .modal -->
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
 
-	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
-		<div id="box_wrapper">
+        <!--topline section visible only on small screens|-->
 
-			<!-- template sections -->
+        <div class="header_absolute">
+          <!--eof topline-->
+          <!-- header with two Bootstrap columns - left for logo and right for navigation -->
+          <header
+            class="page_header_side header_slide header-special header_side_right ds"
+          >
+            <div class="scrollbar-macosx">
+              <div class="side_header_inner">
+                <p class="text-right mb-0 close-wrapper">
+                  <a href="javascript:void(0)">×</a>
+                </p>
 
-			<!--topline section visible only on small screens|-->
+                <div class="widget widget_recent_posts">
+                  <h3 class="widget-title">Our news</h3>
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <article
+                        class="vertical-item post type-post status-publish format-standard has-post-thumbnail"
+                      >
+                        <div class="item-content">
+                          <div class="entry-header">
+                            <div class="entry-meta">
+                              <div class="byline">
+                                <span class="date">
+                                  <a href="blog-@@type.html" rel="bookmark">
+                                    <time
+                                      class="published entry-date"
+                                      datetime="2019-04-09T12:23:09+00:00"
+                                      >20.03.2019</time
+                                    >
+                                  </a>
+                                </span>
+                                <span class="author vcard">
+                                  <a
+                                    class="url fn n"
+                                    href="blog-@@type.html"
+                                    rel="author"
+                                    ><span>by</span> Admin</a
+                                  >
+                                </span>
+                              </div>
+                            </div>
+                            <h4 class="entry-title">
+                              <a href="blog-single-@@type.html" rel="bookmark">
+                                Adipisicing elit sed do eiusmod
+                              </a>
+                            </h4>
 
-			<div class="header_absolute">
-				<!--eof topline-->
-				<!-- header with two Bootstrap columns - left for logo and right for navigation -->
-				<header class="page_header_side header_slide header-special header_side_right ds">
+                            <!-- .entry-meta -->
+                          </div>
+                          <!-- .entry-header -->
+                        </div>
+                        <!-- .item-content -->
+                      </article>
+                    </li>
+                    <li class="media">
+                      <article
+                        class="vertical-item post type-post status-publish format-standard has-post-thumbnail"
+                      >
+                        <div class="item-content">
+                          <div class="entry-header">
+                            <div class="entry-meta">
+                              <div class="byline">
+                                <span class="date">
+                                  <a href="blog-@@type.html" rel="bookmark">
+                                    <time
+                                      class="published entry-date"
+                                      datetime="2019-04-09T12:23:09+00:00"
+                                      >20.03.2019</time
+                                    >
+                                  </a>
+                                </span>
+                                <span class="author vcard">
+                                  <a
+                                    class="url fn n"
+                                    href="blog-@@type.html"
+                                    rel="author"
+                                    ><span>by</span> Admin</a
+                                  >
+                                </span>
+                              </div>
+                            </div>
+                            <h4 class="entry-title">
+                              <a href="blog-single-@@type.html" rel="bookmark">
+                                Adipisicing elit sed do eiusmod
+                              </a>
+                            </h4>
 
-					<div class="scrollbar-macosx">
-						<div class="side_header_inner">
-							<p class="text-right mb-0 close-wrapper"><a href="javascript:void(0)">×</a></p>
+                            <!-- .entry-meta -->
+                          </div>
+                          <!-- .entry-header -->
+                        </div>
+                        <!-- .item-content -->
+                      </article>
+                    </li>
+                    <li class="media">
+                      <article
+                        class="vertical-item post type-post status-publish format-standard has-post-thumbnail"
+                      >
+                        <div class="item-content">
+                          <div class="entry-header">
+                            <div class="entry-meta">
+                              <div class="byline">
+                                <span class="date">
+                                  <a href="blog-@@type.html" rel="bookmark">
+                                    <time
+                                      class="published entry-date"
+                                      datetime="2019-04-09T12:23:09+00:00"
+                                      >20.03.2019</time
+                                    >
+                                  </a>
+                                </span>
+                                <span class="author vcard">
+                                  <a
+                                    class="url fn n"
+                                    href="blog-@@type.html"
+                                    rel="author"
+                                    ><span>by</span> Admin</a
+                                  >
+                                </span>
+                              </div>
+                            </div>
+                            <h4 class="entry-title">
+                              <a href="blog-single-@@type.html" rel="bookmark">
+                                Adipisicing elit sed do eiusmod
+                              </a>
+                            </h4>
 
-							<div class="widget widget_recent_posts">
+                            <!-- .entry-meta -->
+                          </div>
+                          <!-- .entry-header -->
+                        </div>
+                        <!-- .item-content -->
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+                <div class="widget widget_about">
+                  <h3 class="widget-title">About</h3>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Sed
+                    ut perspiciatis unde.
+                  </p>
+                </div>
+                <div class="widget widget_mailchimp">
+                  <h3 class="widget-title">Newsletter</h3>
 
-								<h3 class="widget-title">Our news</h3>
-								<ul class="list-unstyled">
-									<li class="media">
-										<article
-											class="vertical-item  post type-post status-publish format-standard has-post-thumbnail">
-											<div class="item-content">
-												<div class="entry-header">
-													<div class="entry-meta">
-														<div class="byline">
-															<span class="date">
-																<a href="blog-@@type.html" rel="bookmark">
-																	<time class="published entry-date"
-																		datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-																</a>
-															</span>
-															<span class="author vcard">
-																<a class="url fn n" href="blog-@@type.html"
-																	rel="author"><span>by</span> Admin</a>
-															</span>
-														</div>
-													</div>
-													<h4 class="entry-title">
-														<a href="blog-single-@@type.html" rel="bookmark">
-															Adipisicing elit sed do eiusmod
-														</a>
-													</h4>
+                  <form class="signup" action="/">
+                    <label for="mailchimp_email88d">
+                      <span class="screen-reader-text">Subscribe:</span>
+                    </label>
+                    <input
+                      id="mailchimp_email88d"
+                      name="email"
+                      type="email"
+                      class="form-control mailchimp_email has-placeholder"
+                      placeholder="Email"
+                    />
+                    <button type="submit" class="search-submit">
+                      <span class="screen-reader-text">Subscribe</span>
+                    </button>
+                    <div class="response"></div>
+                  </form>
+                </div>
+                <div class="widget widget_social_icons">
+                  <a
+                    href="#"
+                    class="fab fa-facebook-f rounded-icon bg-icon fs-16"
+                    title="facebook"
+                  ></a>
+                  <a
+                    href="#"
+                    class="fab fa-twitter rounded-icon bg-icon fs-16"
+                    title="telegram"
+                  ></a>
+                  <a
+                    href="#"
+                    class="fab fa-linkedin-in rounded-icon bg-icon fs-16"
+                    title="linkedin"
+                  ></a>
+                  <a
+                    href="#"
+                    class="fab fa-instagram rounded-icon bg-icon fs-16"
+                    title="instagram"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </header>
 
-													<!-- .entry-meta -->
-												</div>
-												<!-- .entry-header -->
-											</div><!-- .item-content -->
-										</article>
-									</li>
-									<li class="media">
-										<article
-											class="vertical-item  post type-post status-publish format-standard has-post-thumbnail">
-											<div class="item-content">
-												<div class="entry-header">
-													<div class="entry-meta">
-														<div class="byline">
-															<span class="date">
-																<a href="blog-@@type.html" rel="bookmark">
-																	<time class="published entry-date"
-																		datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-																</a>
-															</span>
-															<span class="author vcard">
-																<a class="url fn n" href="blog-@@type.html"
-																	rel="author"><span>by</span> Admin</a>
-															</span>
-														</div>
-													</div>
-													<h4 class="entry-title">
-														<a href="blog-single-@@type.html" rel="bookmark">
-															Adipisicing elit sed do eiusmod
-														</a>
-													</h4>
+          <header
+            class="page_header header-1 ds bg-transparent s-py-xl-20 s-py-10"
+          >
+            <div class="container-fluid">
+              <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-xl-3 col-md-4 col-12 text-center">
+                  <a href="#home" class="logo">
+                    <img src="img/logo_inova.png" alt="" />
+                    <span class="d-flex flex-column">
+                      <span class="logo-text color-darkgrey">Inovatec</span>
+                      <span class="logo-subtext" data-i18n="slogan"
+                        >Mais que Tecnologia, inovação</span
+                      >
+                    </span>
+                  </a>
+                </div>
+                <div class="col-xl-6 col-1 text-right">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li>
+                        <a href="#home" data-i18n="home">Home</a>
+                      </li>
 
-													<!-- .entry-meta -->
-												</div>
-												<!-- .entry-header -->
-											</div><!-- .item-content -->
-										</article>
-									</li>
-									<li class="media">
-										<article
-											class="vertical-item  post type-post status-publish format-standard has-post-thumbnail">
-											<div class="item-content">
-												<div class="entry-header">
-													<div class="entry-meta">
-														<div class="byline">
-															<span class="date">
-																<a href="blog-@@type.html" rel="bookmark">
-																	<time class="published entry-date"
-																		datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-																</a>
-															</span>
-															<span class="author vcard">
-																<a class="url fn n" href="blog-@@type.html"
-																	rel="author"><span>by</span> Admin</a>
-															</span>
-														</div>
-													</div>
-													<h4 class="entry-title">
-														<a href="blog-single-@@type.html" rel="bookmark">
-															Adipisicing elit sed do eiusmod
-														</a>
-													</h4>
+                      <li>
+                        <a href="#about" data-i18n="about">Sobre Nós</a>
+                      </li>
 
-													<!-- .entry-meta -->
-												</div>
-												<!-- .entry-header -->
-											</div><!-- .item-content -->
-										</article>
-									</li>
+                      <li>
+                        <a href="#services" data-i18n="services"
+                          >Serviços/Produtos</a
+                        >
+                      </li>
 
-								</ul>
-							</div>
-							<div class="widget widget_about">
-								<h3 class="widget-title">About</h3>
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-									mollit anim id est laborum. Sed ut perspiciatis unde.
-								</p>
-							</div>
-							<div class="widget widget_mailchimp">
-								<h3 class="widget-title">Newsletter</h3>
+                      <li>
+                        <a href="#proposta" data-i18n="valueProposal"
+                          >Proposta de Valor</a
+                        >
+                      </li>
 
-								<form class="signup" action="/">
-									<label for="mailchimp_email88d">
-										<span class="screen-reader-text">Subscribe:</span>
-									</label>
-									<input id="mailchimp_email88d" name="email" type="email"
-										class="form-control mailchimp_email has-placeholder" placeholder="Email">
-									<button type="submit" class="search-submit">
-										<span class="screen-reader-text">Subscribe</span>
-									</button>
-									<div class="response"></div>
-								</form>
-							</div>
-							<div class="widget widget_social_icons">
-								<a href="#" class="fab fa-facebook-f rounded-icon bg-icon fs-16" title="facebook"></a>
-								<a href="#" class="fab fa-twitter rounded-icon bg-icon fs-16" title="telegram"></a>
-								<a href="#" class="fab fa-linkedin-in rounded-icon bg-icon fs-16" title="linkedin"></a>
-								<a href="#" class="fab fa-instagram rounded-icon bg-icon fs-16" title="instagram"></a>
-							</div>
-						</div>
-					</div>
-				</header>
+                      <li>
+                        <a href="#clients" data-i18n="clients"
+                          >Nossos clientes</a
+                        >
+                      </li>
 
-				<header class="page_header header-1 ds bg-transparent s-py-xl-20 s-py-10 ">
+                      <li>
+                        <a href="#contacts" data-i18n="contacts">Contactos</a>
+                      </li>
 
-					<div class="container-fluid">
+                      <!-- contacts -->
+                    </ul>
+                    <div class="language-container">
+                      <select
+                        id="languageSwitcher"
+                        class="custom-select"
+                        onchange="changeLanguage()"
+                      >
+                        <option
+                          value="en"
+                          data-image="images/bandeira-eua.png"
+                          selected
+                        >
+                          English
+                        </option>
+                        <option
+                          value="pt"
+                          data-image="images/bandeira-portugal.png"
+                        >
+                          Português
+                        </option>
+                      </select>
+                    </div>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+            </div>
+            <!-- header toggler -->
+            <span class="toggle_menu"><span>menu</span></span>
+          </header>
+        </div>
 
-						<div class="row d-flex align-items-center justify-content-center">
-							<div class="col-xl-3 col-md-4 col-12 text-center">
-								<a href="#home" class="logo">
-									<img src="img/logo_inova.png" alt="">
-									<span class="d-flex flex-column">
-										<span class="logo-text color-darkgrey">Inovatec</span>
-										<span class="logo-subtext">Mais que Tecnologia, inovação</span>
-									</span>
-								</a>
-							</div>
-							<div class="col-xl-6 col-1 text-right">
-								<!-- main nav start -->
-								<nav class="top-nav">
-									<ul class="nav sf-menu">
-										<li>
-											<a href="#home">Home</a>
+        <section class="page_slider" id="home">
+          <div class="flexslider">
+            <ul class="slides">
+              <li class="ds cover-image">
+                <img src="images/slide01.jpg" alt="img" />
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="intro_layers_wrapper">
+                        <div class="intro_layers">
+                          <div class="intro_layer">
+                            <h6
+                              class="intro_before_featured_word"
+                              data-i18n="offer1"
+                            >
+                              01. Fornecemos equipamentos mecânicos de alta
+                              qualidade para garantir eficiência e produtividade
+                              em seus projetos.
+                            </h6>
+                            <h4
+                              class="intro_featured_word"
+                              data-i18n="offer1Content"
+                            >
+                              Procurement e Suprimentos Mecânicos
+                            </h4>
+                          </div>
+                        </div>
+                        <!-- eof .intro_layers -->
+                      </div>
+                      <!-- eof .intro_layers_wrapper -->
+                    </div>
+                    <!-- eof .col-* -->
+                  </div>
+                  <!-- eof .row -->
+                </div>
+                <!-- eof .container-fluid -->
+              </li>
+              <li class="ds cover-image">
+                <img src="images/slide02.jpg" alt="img" />
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="intro_layers_wrapper">
+                        <div class="intro_layers">
+                          <div class="intro_layer">
+                            <h6
+                              class="intro_before_featured_word"
+                              data-i18n="offer2"
+                            >
+                              02. Oferecemos suprimentos elétricos e de
+                              telecomunicações que atendem às demandas
+                              tecnológicas do setor.
+                            </h6>
+                            <h2
+                              class="intro_featured_word"
+                              data-i18n="offer2Content"
+                            >
+                              Soluções em Elétrica e Telecom
+                            </h2>
+                          </div>
+                        </div>
+                        <!-- eof .intro_layers -->
+                      </div>
+                      <!-- eof .intro_layers_wrapper -->
+                    </div>
+                    <!-- eof .col-* -->
+                  </div>
+                  <!-- eof .row -->
+                </div>
+                <!-- eof .container-fluid -->
+              </li>
+              <li class="ds cover-image">
+                <img src="images/slide03.jpg" alt="img" />
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="intro_layers_wrapper">
+                        <div class="intro_layers">
+                          <div class="intro_layer">
+                            <h6
+                              class="intro_before_featured_word"
+                              data-i18n="offer3"
+                            >
+                              03. Garantimos segurança e confiabilidade com
+                              fornecimento de EPI’s, instrumentos e equipamentos
+                              essenciais.
+                            </h6>
+                            <h2
+                              class="intro_featured_word"
+                              data-i18n="offer3Content"
+                            >
+                              Equipamentos de Proteção e Instrumentos
+                            </h2>
+                          </div>
+                        </div>
+                        <!-- eof .intro_layers -->
+                      </div>
+                      <!-- eof .intro_layers_wrapper -->
+                    </div>
+                    <!-- eof .col-* -->
+                  </div>
+                  <!-- eof .row -->
+                </div>
+                <!-- eof .container-fluid -->
+              </li>
+            </ul>
+          </div>
+          <!-- eof flexslider -->
+        </section>
 
-										</li>
+        <section
+          id="about"
+          class="ls main-testimonial s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-2 text-center"></div>
+              <div class="col-12 col-lg-8 text-justify">
+                <div class="divider-35 hidden-above-lg"></div>
+                <div class="divider--5"></div>
+                <p class="excerpt" data-i18n="description">
+                  A INOVATEC é uma empresa focada em fornecer soluções
+                  tecnológicas avançadas para a indústria petrolífera e outros
+                  setores estratégicos.
+                </p>
+                <p data-i18n="descriptionContent">
+                  Desenvolvemos sistemas inovadores e oferecemos a
+                  comercialização e distribuição de produtos especializados,
+                  além de serviços de consultoria e outsourcing que aumentam a
+                  eficiência e competitividade dos nossos clientes. Nosso
+                  compromisso com a inovação, excelência, colaboração,
+                  sustentabilidade, foco no cliente e ética nos impulsiona a ser
+                  a parceira tecnológica de confiança, entregando soluções
+                  personalizadas e de alta qualidade.
+                </p>
+              </div>
+              <div class="col-12 col-lg-2 text-sm-left text-center"></div>
+            </div>
+          </div>
+        </section>
 
-										<li>
-											<a href="#about">Sobre Nós</a>
-										</li>
+        <section
+          class="ls s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0"
+        >
+          <div class="cover-image s-cover-left">
+            <img src="images/services/service1.jpg" alt="01" />
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-12 col-lg-6"></div>
+              <div class="col-xs-12 col-12 col-lg-6">
+                <div class="content-center">
+                  <h2 class="special-heading text-sm-left text-center">
+                    <span class="text-capitalize" data-i18n="mission">
+                      Missão
+                    </span>
+                  </h2>
+                  <div class="divider-10 hidden-below-lg"></div>
+                  <p data-i18n="missionContent">
+                    Fornecer soluções tecnológicas de ponta, desenvolvendo
+                    sistemas inovadores e a comercialização e distribuição de
+                    produtos específicos que atendam às exigências da indústria
+                    petrolífera, enquanto oferecemos serviços de consultoria e
+                    outsourcing especializados que potencializem a eficiência e
+                    a competitividade dos nossos clientes.
+                  </p>
+                  <div class="divider-45 hidden-below-lg"></div>
 
-										<li>
-											<a href="#services">Serviços/Produtos</a>
-										</li>
+                  <h2 class="special-heading text-sm-left text-center">
+                    <span class="text-capitalize" data-i18n="vision">
+                      Visão
+                    </span>
+                  </h2>
+                  <div class="divider-10 hidden-below-lg"></div>
+                  <p data-i18n="visionContent">
+                    Ser reconhecida como a parceira tecnológica de referência na
+                    indústria petrolífera e em outros sectores estratégicos,
+                    destacando-se pela inovação, confiabilidade e pela
+                    capacidade de entregar resultados que superem as
+                    expectativas dos nossos clientes.
+                  </p>
 
+                  <div class="divider-30 hidden-above-lg"></div>
 
-										<li>
-											<a href="#proposta">Proposta de Valor</a>
-										</li>
+                  <div class="divider--10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section
+          class="ls s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0"
+        >
+          <div class="cover-image s-cover-right">
+            <img src="images/services/service2.jpg" alt="01" />
+          </div>
 
-										<li>
-											<a href="#clients">Nossos clientes</a>
-										</li>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-12 col-lg-6">
+                <div class="content-center">
+                  <h2 class="special-heading text-sm-left text-center">
+                    <span class="text-capitalize" data-i18n="values">
+                      Valores
+                    </span>
+                  </h2>
+                  <div class="divider-10 hidden-above-lg"></div>
 
+                  <ul class="list-styled">
+                    <li data-i18n="values1">
+                      Inovação: Buscamos constantemente novas tecnologias e
+                      abordagens para criar soluções eficientes e diferenciadas.
+                    </li>
+                    <li data-i18n="values2">
+                      Compromisso com a Excelência: Entregamos produtos e
+                      serviços que excedem os padrões de qualidade e
+                      confiabilidade, essenciais para indústrias críticas como a
+                      petrolífera.
+                    </li>
 
-										<li>
-											<a href="#contacts">Contactos</a>
-										</li>
+                    <li data-i18n="values3">
+                      Colaboração: Construímos relações sólidas com clientes,
+                      parceiros e nossa equipa, garantindo sucesso mútuo.
+                    </li>
 
-										<!-- contacts -->
+                    <li data-i18n="values4">
+                      Sustentabilidade: Promovemos práticas tecnológicas que
+                      respeitam o meio ambiente e ajudam a construir um futuro
+                      sustentável.
+                    </li>
 
-									</ul>
-								</nav>
-								<!-- eof main nav -->
-							</div>
+                    <li data-i18n="values5">
+                      Foco no Cliente: Compreendemos as necessidades de cada
+                      cliente e oferecemos soluções personalizadas que agreguem
+                      valor real.
+                    </li>
 
+                    <li data-i18n="values6">
+                      Ética e Integridade: Conduzimos todas as nossas operações
+                      com transparência, responsabilidade e respeito.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-12 col-lg-6"></div>
+            </div>
+          </div>
+        </section>
 
-						</div>
-
-					</div>
-					<!-- header toggler -->
-					<span class="toggle_menu"><span>menu</span></span>
-				</header>
-			</div>
-
-			<section class="page_slider" id="home">
-				<div class="flexslider">
-					<ul class="slides">
-						<li class="ds cover-image">
-							<img src="images/slide01.jpg" alt="img">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="intro_layers_wrapper">
-											<div class="intro_layers">
-												<div class="intro_layer">
-													<h6 class="intro_before_featured_word">01. Fornecemos equipamentos
-														mecânicos de alta qualidade para garantir eficiência e
-														produtividade em seus projetos.</h6>
-													<h4 class="intro_featured_word">
-														Procurement e Suprimentos Mecânicos
-													</h4>
-
-												</div>
-											</div> <!-- eof .intro_layers -->
-										</div> <!-- eof .intro_layers_wrapper -->
-									</div> <!-- eof .col-* -->
-								</div><!-- eof .row -->
-							</div><!-- eof .container-fluid -->
-						</li>
-						<li class="ds cover-image">
-							<img src="images/slide02.jpg" alt="img">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="intro_layers_wrapper">
-											<div class="intro_layers">
-												<div class="intro_layer">
-													<h6 class="intro_before_featured_word">02. Oferecemos suprimentos
-														elétricos e de telecomunicações que atendem às demandas
-														tecnológicas do setor.</h6>
-													<h2 class="intro_featured_word">
-														Soluções em Elétrica e Telecom
-													</h2>
-
-												</div>
-											</div> <!-- eof .intro_layers -->
-										</div> <!-- eof .intro_layers_wrapper -->
-									</div> <!-- eof .col-* -->
-								</div><!-- eof .row -->
-							</div><!-- eof .container-fluid -->
-						</li>
-						<li class="ds cover-image">
-							<img src="images/slide03.jpg" alt="img">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="intro_layers_wrapper">
-											<div class="intro_layers">
-												<div class="intro_layer">
-													<h6 class="intro_before_featured_word">03. Garantimos segurança e
-														confiabilidade com fornecimento de EPI’s, instrumentos e
-														equipamentos essenciais.</h6>
-													<h2 class="intro_featured_word">
-														Equipamentos de Proteção e Instrumentos
-													</h2>
-
-												</div>
-											</div> <!-- eof .intro_layers -->
-										</div> <!-- eof .intro_layers_wrapper -->
-									</div> <!-- eof .col-* -->
-								</div><!-- eof .row -->
-							</div><!-- eof .container-fluid -->
-						</li>
-
-
-					</ul>
-				</div> <!-- eof flexslider -->
-			</section>
-
-
-			
-
-
-			<section id="about" class="ls main-testimonial s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-2 text-center">
-
-						</div>
-						<div class="col-12 col-lg-8 text-justify">
-							<div class="divider-35 hidden-above-lg"></div>
-							<div class="divider--5"></div>
-							<p class="excerpt">
-								A INOVATEC é uma empresa focada em fornecer soluções tecnológicas avançadas para a
-								indústria petrolífera e outros setores estratégicos.
-							</p>
-							<p>
-								Desenvolvemos sistemas inovadores e oferecemos a comercialização e distribuição de
-								produtos especializados, além de serviços de consultoria e outsourcing que aumentam a
-								eficiência e competitividade dos nossos clientes.
-
-								Nosso compromisso com a inovação, excelência, colaboração, sustentabilidade, foco no
-								cliente e ética nos impulsiona a ser a parceira tecnológica de confiança, entregando
-								soluções personalizadas e de alta qualidade.
-							</p>
-						</div>
-						<div class="col-12 col-lg-2 text-sm-left text-center">
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
-				<div class="cover-image s-cover-left">
-					<img src="images/services/service1.jpg" alt="01">
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-12 col-lg-6">
-
-						</div>
-						<div class="col-xs-12 col-12 col-lg-6">
-							<div class="content-center">
-								<h2 class="special-heading text-sm-left text-center">
-									<span class="text-capitalize">
-										Missão
-									</span>
-								</h2>
-								<div class="divider-10 hidden-below-lg"></div>
-								<p>
-									Fornecer soluções tecnológicas de ponta, desenvolvendo sistemas inovadores e a
-									comercialização e distribuição de produtos específicos que atendam às exigências da
-									indústria petrolífera, enquanto oferecemos serviços de consultoria e outsourcing
-									especializados que potencializem a eficiência e a competitividade dos nossos
-									clientes.
-
-								</p>
-								<div class="divider-45 hidden-below-lg"></div>
-
-								<h2 class="special-heading text-sm-left text-center">
-									<span class="text-capitalize">
-										Visão
-									</span>
-								</h2>
-								<div class="divider-10 hidden-below-lg"></div>
-								<p>
-									Ser reconhecida como a parceira tecnológica de referência na indústria petrolífera e
-									em outros sectores estratégicos, destacando-se pela inovação, confiabilidade e pela
-									capacidade de entregar resultados que superem as expectativas dos nossos clientes.
-
-								</p>
-
-								<div class="divider-30 hidden-above-lg"></div>
-
-								<div class="divider--10"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
-				<div class="cover-image s-cover-right">
-					<img src="images/services/service2.jpg" alt="01">
-				</div>
-
-				<div class="container-fluid">
-					<div class="row">
-
-						<div class="col-xs-12 col-12 col-lg-6">
-							<div class="content-center">
-								<h2 class="special-heading text-sm-left text-center">
-									<span class="text-capitalize">
-										Valores
-									</span>
-								</h2>
-								<div class="divider-10 hidden-above-lg"></div>
-
-
-								<ul class="list-styled">
-									<li>Inovação: Buscamos constantemente novas tecnologias e abordagens para criar
-										soluções eficientes e diferenciadas.</li>
-									<li>Compromisso com a Excelência: Entregamos produtos e serviços que excedem os
-										padrões de qualidade e confiabilidade, essenciais para indústrias críticas como
-										a petrolífera.
-									</li>
-
-									<li>Colaboração: Construímos relações sólidas com clientes, parceiros e nossa
-										equipa, garantindo sucesso mútuo.</li>
-
-									<li> Sustentabilidade: Promovemos práticas tecnológicas que respeitam o meio
-										ambiente e ajudam a construir um futuro sustentável.</li>
-
-									<li>
-										Foco no Cliente: Compreendemos as necessidades de cada cliente e oferecemos
-										soluções personalizadas que agreguem valor real.
-									</li>
-
-									<li>
-										Ética e Integridade: Conduzimos todas as nossas operações com transparência,
-										responsabilidade e respeito.
-									</li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-xs-12 col-12 col-lg-6">
-
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- <section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
+        <!-- <section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
 				<div class="cover-image s-cover-left">
 					<a href="images/services/service3.jpg" class="photoswipe-link side-video" data-width="800"
 						data-height="800" data-iframe="https://www.youtube.com/embed/GhthHC0s38A"></a>
@@ -573,842 +734,953 @@
 				</div>
 			</section> -->
 
-
-			<section id="services" class="ds text-sm-left text-center container-px-0 c-gutter-0">
-				<div class="container-fluid">
-					<div class="row service-v2">
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Consumíveis Elétricos
-									</h6>
-								</a>
-
-								
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Iluminação Elétrica
-									</h6>
-								</a>
-
-								
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Segurança Elétrica
-									</h6>
-								</a>
-
-								
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Dispositivos de Supressão de Sobretensão
-									</h6>
-								</a>
-
-								
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Telecomunicações
-									</h6>
-								</a>
-
-								
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Instrumentação
-									</h6>
-								</a>
-
-							
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Ferramentas Mecânicas
-									</h6>
-								</a>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Fixadores
-									</h6>
-								</a>
-							</div>
-						</div>	
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Manuseio de Materiais
-									</h6>
-								</a>
-
-							
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										Mangueiras, Tubos e Conexões
-									</h6>
-								</a>
-
-							
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										EPI Padrão
-									</h6>
-								</a>
-
-							
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 col-xl-2   ">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled  fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>
-										EPI Especializado
-									</h6>
-								</a>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Pessoal de HSE</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Gerente de Projetos</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Especialista em Controle de Projetos</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Coordenador de Logística</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Especialista em Controle de Qualidade</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Engenheiros de TI e Telecomunicações</h6>
-								</a>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Engenheiros Mecânicos</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Montadores Mecânicos</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Soldadores</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Engenheiros Elétricos</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Engenheiros de Instrumentação</h6>
-								</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4 col-xl-2">
-							<div class="icon-box service-single with-icon layout2 ds text-center">
-								<a class="link-icon" href="#">
-									<div class="icon-styled fs-50">
-										<i class="ico ico-extraction"></i>
-									</div>
-								</a>
-								<a href="#">
-									<h6>Engenheiros de Manutenção</h6>
-								</a>
-							</div>
-						</div>
-						
-
-
-					</div>
-				</div>
-			</section>
-
-			<section id="projects"
-				class="ds s-overlay portfolio-section  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-center">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="special-heading text-center">
-								<span class="text-capitalize">
-									Produtos
-								</span>
-							</h2>
-							<div class="divider-50 hidden-below-lg"></div>
-							<div class="divider-30 hidden-above-lg"></div>
-							
-							<div class="row isotope-wrapper portfolio masonry-layout c-mb-30"
-								data-filters=".gallery-filters">
-
-								<div class="col-xl-4 col-sm-6 business news">
-
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem1.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title="" href="images/products/Imagem1.jpg"></a>
-												
-											</div>
-											<h6>
-												Supressores de picos
-											</h6>
-
-										</div>
-									</div>
-
-								</div>
-
-								<div class="col-xl-4 col-sm-6 innovations corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem2.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content ">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem2.jpg"></a>
-											</div>
-											<h6>
-												Telecomunicação
-											</h6>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-sm-6 entertainment news innovations">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem3.gif" style="height: 200px !important; object-fit: cover;" alt="img">
-
-										</div>
-										<div class="item-content ">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem3.gif"></a>
-												
-											</div>
-
-											<h6>
-												Instrumentação
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-sm-6 business entertainment">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem4.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-
-										</div>
-										<div class="item-content ">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem4.jpg"></a>
-											</div>
-
-											<h6>
-												Ferramentas Mecânicas
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-sm-6 innovations corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem5.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem5.jpg"></a>
-											</div>
-
-											<h6>
-												Fixador
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-sm-6 entertainment news corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem6.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem6.jpg"></a>
-											</div>
-
-											<h6>
-												Manuseamento de materiais
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-
-								<div class="col-xl-4 col-sm-6 entertainment news corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem7.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem7.jpg"></a>
-											</div>
-
-											<h6>
-												Tubagem e encaixe de mangueira
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="col-xl-4 col-sm-6 entertainment news corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem8.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem8.jpg"></a>
-											</div>
-
-											<h6>
-												PPE
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-
-								<div class="col-xl-4 col-sm-6 entertainment news corporate">
-									<div class="vertical-item item-gallery content-absolute text-center ds">
-										<div class="item-media">
-											<img src="images/products/Imagem9.jpg" style="height: 200px !important; object-fit: cover;" alt="img">
-										</div>
-										<div class="item-content">
-											<div class="links-wrap">
-												<a class="link-zoom photoswipe-link" title=""
-													href="images/products/Imagem9.jpg"></a>
-											</div>
-
-											<h6>
-												Specialized PPE
-											</h6>
-
-
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-							<div class="mt--30"></div>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="proposta" class="ls  s-py-xl-30 s-py-lg-30 s-py-md-90 s-py-60 text-sm-left text-center c-gutter-60">
-				<div class="container">
-
-					<h2 class="special-heading text-sm-center text-center">
-						<span class="text-capitalize">
-							Proposta de Valor
-						</span>
-					</h2>
-					<div class="divider-60"></div>
-
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="row isotope-wrapper masonry-layout c-gutter-10 c-mb-10">
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>A INOVATEC oferece Procurement e Suprimentos Altamente Personalizados e
-												de Nível Internacional, com Entregas Pontuais de Equipamentos
-												Especializados e Pessoal em Angola.</p>
-
-										</div>
-									</div>
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-											<p>A INOVATEC conta com engenheiros qualificados, com vasta experiência em
-												sourcing global e um entendimento claro dos mecanismos locais de
-												importação.</p>
-
-										</div>
-									</div>
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>A INOVATEC possui um banco de dados rico de pessoal qualificado (nacional
-												e internacional), ao qual podemos recorrer para atender às necessidades
-												dos nossos clientes.</p>
-
-										</div>
-									</div>
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>A INOVATEC tem experiência com outros clientes locais em interpretar os
-												requisitos dos clientes por meio de seus objetivos estabelecidos.</p>
-
-										</div>
-									</div>
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Colaboramos com grandes fornecedores de equipamentos especializados nos
-												mercados da África do Sul, Europa, Oriente Médio e Ásia.</p>
-
-										</div>
-									</div>
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Os prazos de entrega são melhor gerenciados pela nossa capacidade de
-												estocagem.
-											</p>
-
-										</div>
-									</div>
-
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Nossa base de parceiros nos permite equilibrar a eficácia de custos e os
-												prazos de entrega, trabalhando de perto com parceiros confiáveis.
-											</p>
-
-										</div>
-									</div>
-
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Também garantimos a qualidade e a autenticidade dos produtos, trabalhando
-												apenas com fornecedores certificados de equipamentos especializados.
-											</p>
-
-										</div>
-									</div>
-
-
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Contamos com uma equipe altamente qualificada para propor soluções de
-												engenharia quando necessário.
-											</p>
-
-										</div>
-									</div>
-
-
-									<div class="col-xl-4 col-md-6  ">
-										<div
-											class="icon-box service-single with-icon rounded  ls big-padding text-center">
-											<a class="link-icon" href="#">
-												<div class="icon-styled bg-icon grey-bg color-darkgrey round fs-30">
-													<i class="ico ico-water-factory"></i>
-												</div>
-											</a>
-
-
-											<p>Temos parceiros globais especialistas que oferecem marcas alternativas quando possível.
-											</p>
-
-										</div>
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-						<div class="mt--30"></div>
-					</div>
-
-
-
-				</div>
-			</section>
-
-
-
-
-			<section id="clients" class="ls  s-py-xl-10 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center c-gutter-60">
-				<div class="container">
-
-					<h2 class="special-heading text-sm-center text-center">
-						<span class="text-capitalize">
-							Nossos Clientes
-						</span>
-					</h2>
-					<div class="divider-60"></div>
-
-					<div class="row">
-						
-						<div class="col-12">
-							<div class="divider-30 hidden-above-lg"></div>
-							<div class="row isotope-wrapper masonry-layout images-grid c-mb-30 c-gutter-30">
-								<div class="col-xl-4 col-sm-6  ">
-									<a href="#">
-										<div class="bordered text-center p-50 rounded">
-											<img src="images/clients/Imagem10.png" style="height: 100px !important;" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-4 col-sm-6  ">
-									<a href="#">
-										<div class="bordered text-center p-50 rounded">
-											<img src="images/clients/Imagem11.png" style="height: 100px !important;" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-4 col-sm-6  ">
-									<a href="#">
-										<div class="bordered text-center p-50 rounded">
-											<img src="images/clients/Imagem12.png" style="height: 100px !important;" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-4 col-sm-6  ">
-									<a href="#">
-										<div class="bordered text-center p-50 rounded">
-											<img src="images/clients/Imagem13.jpg" style="height: 100px !important;" alt="">
-										</div>
-									</a>
-								</div>
-								
-								
-							</div>
-							<div class="mt--30"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			
-
-			<section class="ds call-to-action text-center  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="special-heading text-center">
-								<span class="text-capitalize big">
-									Mais que Tecnologia, Inovação!
-								</span>
-							</h2>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- <section
+        <section
+          id="services"
+          class="ds text-sm-left text-center container-px-0 c-gutter-0"
+        >
+          <div class="container-fluid">
+            <div class="row service-v2">
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="electricalConsumables">
+                      Consumíveis Elétricos
+                    </h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="electricalLighting">Iluminação Elétrica</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="electricalSafety">Segurança Elétrica</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="surgeArrestors">
+                      Dispositivos de Supressão de Sobretensão
+                    </h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="telecommunications">Telecomunicações</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="instrumentation">Instrumentação</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="mechanicalTools">Ferramentas Mecânicas</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="fasteners">Fixadores</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="materialHandling">Manuseio de Materiais</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="hoseTubingAndFitting">
+                      Mangueiras, Tubos e Conexões
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="standardPPE">EPI Padrão</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="specializedPPE">EPI Especializado</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="hsePersonnel">Pessoal de HSE</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="projectManager">Gerente de Projetos</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="projectControlSpecialist">
+                      Especialista em Controle de Projetos
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="logisticsCoordinator">
+                      Coordenador de Logística
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="qualityControlSpecialist">
+                      Especialista em Controle de Qualidade
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="itAndTelecomEngineers">
+                      Engenheiros de TI e Telecomunicações
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="mechanicalEngineers">
+                      Engenheiros Mecânicos
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="mechanicalFitters">Montadores Mecânicos</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="welders">Soldadores</h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="electricalEngineers">
+                      Engenheiros Elétricos
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="instrumentationEngineers">
+                      Engenheiros de Instrumentação
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-2">
+                <div
+                  class="icon-box service-single with-icon layout2 ds text-center"
+                >
+                  <a class="link-icon" href="#">
+                    <div class="icon-styled fs-50">
+                      <i class="ico ico-extraction"></i>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <h6 data-i18n="maintenanceEngineers">
+                      Engenheiros de Manutenção
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="projects"
+          class="ds s-overlay portfolio-section s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-center"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="special-heading text-center">
+                  <span class="text-capitalize" data-i18n="products">
+                    Produtos
+                  </span>
+                </h2>
+                <div class="divider-50 hidden-below-lg"></div>
+                <div class="divider-30 hidden-above-lg"></div>
+
+                <div
+                  class="row isotope-wrapper portfolio masonry-layout c-mb-30"
+                  data-filters=".gallery-filters"
+                >
+                  <div class="col-xl-4 col-sm-6 business news">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem1.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem1.jpg"
+                          ></a>
+                        </div>
+                        <h6 data-i18n="surgeArrestors_2">
+                          Supressores de picos
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 innovations corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem2.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem2.jpg"
+                          ></a>
+                        </div>
+                        <h6 data-i18n="telecommunication_2">Telecomunicação</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 entertainment news innovations">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem3.gif"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem3.gif"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="instrumentation_2">Instrumentação</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 business entertainment">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem4.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem4.jpg"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="mechanicalTools_2">
+                          Ferramentas Mecânicas
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 innovations corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem5.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem5.jpg"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="fastener">Fixador</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 entertainment news corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem6.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem6.jpg"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="materialHandling_2">
+                          Manuseio de materiais
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 entertainment news corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem7.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem7.jpg"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="hoseTubingAndFitting_2">
+                          Mangueiras, Tubos e Conexões
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 entertainment news corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem8.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem8.jpg"
+                          ></a>
+                        </div>
+
+                        <h6>PPE</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-6 entertainment news corporate">
+                    <div
+                      class="vertical-item item-gallery content-absolute text-center ds"
+                    >
+                      <div class="item-media">
+                        <img
+                          src="images/products/Imagem9.jpg"
+                          style="height: 200px !important; object-fit: cover"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="item-content">
+                        <div class="links-wrap">
+                          <a
+                            class="link-zoom photoswipe-link"
+                            title=""
+                            href="images/products/Imagem9.jpg"
+                          ></a>
+                        </div>
+
+                        <h6 data-i18n="specializedPPE_2">Specialized PPE</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt--30"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="proposta"
+          class="ls s-py-xl-30 s-py-lg-30 s-py-md-90 s-py-60 text-sm-left text-center c-gutter-60"
+        >
+          <div class="container">
+            <h2 class="special-heading text-sm-center text-center">
+              <span class="text-capitalize" data-i18n="valueproposition">
+                Proposta de Valor
+              </span>
+            </h2>
+            <div class="divider-60"></div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="row isotope-wrapper masonry-layout c-gutter-10 c-mb-10"
+                  >
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition1">
+                          A INOVATEC oferece Procurement e Suprimentos Altamente
+                          Personalizados e de Nível Internacional, com Entregas
+                          Pontuais de Equipamentos Especializados e Pessoal em
+                          Angola.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition2">
+                          A INOVATEC conta com engenheiros qualificados, com
+                          vasta experiência em sourcing global e um entendimento
+                          claro dos mecanismos locais de importação.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition3">
+                          A INOVATEC possui um banco de dados rico de pessoal
+                          qualificado (nacional e internacional), ao qual
+                          podemos recorrer para atender às necessidades dos
+                          nossos clientes.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition4">
+                          A INOVATEC tem experiência com outros clientes locais
+                          em interpretar os requisitos dos clientes por meio de
+                          seus objetivos estabelecidos.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition5">
+                          Colaboramos com grandes fornecedores de equipamentos
+                          especializados nos mercados da África do Sul, Europa,
+                          Oriente Médio e Ásia.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition6">
+                          Os prazos de entrega são melhor gerenciados pela nossa
+                          capacidade de estocagem.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition7">
+                          Nossa base de parceiros nos permite equilibrar a
+                          eficácia de custos e os prazos de entrega, trabalhando
+                          de perto com parceiros confiáveis.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition8">
+                          Também garantimos a qualidade e a autenticidade dos
+                          produtos, trabalhando apenas com fornecedores
+                          certificados de equipamentos especializados.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valueProposition9">
+                          Contamos com uma equipe altamente qualificada para
+                          propor soluções de engenharia quando necessário.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                      <div
+                        class="icon-box service-single with-icon rounded ls big-padding text-center"
+                      >
+                        <a class="link-icon" href="#">
+                          <div
+                            class="icon-styled bg-icon grey-bg color-darkgrey round fs-30"
+                          >
+                            <i class="ico ico-water-factory"></i>
+                          </div>
+                        </a>
+
+                        <p data-i18n="valuePropositionEnd">
+                          Temos parceiros globais especialistas que oferecem
+                          marcas alternativas quando possível.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt--30"></div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="clients"
+          class="ls s-py-xl-10 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center c-gutter-60"
+        >
+          <div class="container">
+            <h2 class="special-heading text-sm-center text-center">
+              <span class="text-capitalize" data-i18n="ourclients">
+                Nossos Clientes
+              </span>
+            </h2>
+            <div class="divider-60"></div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="divider-30 hidden-above-lg"></div>
+                <div
+                  class="row isotope-wrapper masonry-layout images-grid c-mb-30 c-gutter-30"
+                >
+                  <div class="col-xl-4 col-sm-6">
+                    <a href="#">
+                      <div class="bordered text-center p-50 rounded">
+                        <img
+                          src="images/clients/Imagem10.png"
+                          style="height: 100px !important"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                    <a href="#">
+                      <div class="bordered text-center p-50 rounded">
+                        <img
+                          src="images/clients/Imagem11.png"
+                          style="height: 100px !important"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                    <a href="#">
+                      <div class="bordered text-center p-50 rounded">
+                        <img
+                          src="images/clients/Imagem12.png"
+                          style="height: 100px !important"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                    <a href="#">
+                      <div class="bordered text-center p-50 rounded">
+                        <img
+                          src="images/clients/Imagem13.jpg"
+                          style="height: 100px !important"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt--30"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ds call-to-action text-center s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="special-heading text-center">
+                  <span class="text-capitalize big" data-i18n="slogan">
+                    Mais que Tecnologia, Inovação!
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section
 				class="ls map-section s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-160 s-pb-lg-130 s-pb-md-90 s-pb-60">
 				<div class="container">
 					<div class="row">
@@ -1491,141 +1763,267 @@
 				</div>
 			</section> -->
 
-			
+        <footer
+          id="contacts"
+          class="page_footer text-center c-gutter-100 text-sm-left ds"
+        >
+          <div class="container">
+            <div class="row justify-content-center">
+              <div
+                class="col-lg-4 col-md-6 order-1 order-lg-1 animate"
+                data-animation="fadeInUp"
+              >
+                <div
+                  class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-90 divider-60"
+                ></div>
+                <a href="#home" class="logo">
+                  <img src="img/logo_inova.png" alt="" />
+                  <span class="d-flex flex-column">
+                    <span class="logo-text color-darkgrey">Inovatec</span>
+                    <span class="logo-subtext" data-i18n="slogan"
+                      >Mais que Tecnologia, inovação</span
+                    >
+                  </span>
+                </a>
 
+                <p data-i18n="description">
+                  A INOVATEC é uma empresa focada em fornecer soluções
+                  tecnológicas avançadas para a indústria petrolífera e outros
+                  setores estratégicos.
+                </p>
+                <a
+                  href="#"
+                  class="fab fa-facebook-f rounded-icon bg-icon fs-16"
+                  title="facebook"
+                ></a>
+                <a
+                  href="#"
+                  class="fab fa-twitter rounded-icon bg-icon fs-16"
+                  title="telegram"
+                ></a>
+                <a
+                  href="#"
+                  class="fab fa-linkedin-in rounded-icon bg-icon fs-16"
+                  title="linkedin"
+                ></a>
+                <a
+                  href="#"
+                  class="fab fa-instagram rounded-icon bg-icon fs-16"
+                  title="instagram"
+                ></a>
+                <div
+                  class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-60 divider-30"
+                ></div>
+              </div>
 
-			<footer id="contacts" class="page_footer  text-center c-gutter-100 text-sm-left  ds">
-				<div class="container">
-					<div class="row justify-content-center">
+              <div
+                class="col-lg-4 col-md-12 ls order-3 order-lg-2 footer-special-column text-center animate"
+                data-animation="fadeInUp"
+              >
+                <div class="form-wrapper">
+                  <form class="contact-form" method="post" action="/">
+                    <div class="row c-mb-20">
+                      <div
+                        class="col-12 form-title text-center form-builder-item"
+                      >
+                        <div class="header title">
+                          <h2 data-i18n="contact">Contacto-nos</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row c-mb-10 c-gutter-10">
+                      <div class="col-lg-12 text-center">
+                        <div class="form-group has-placeholder">
+                          <label for="name22335x5553" data-i18n="fullName"
+                            >Nome completo
+                            <span class="required">*</span></label
+                          >
+                          <input
+                            type="text"
+                            aria-required="true"
+                            size="30"
+                            value=""
+                            name="name"
+                            id="name22335x5553"
+                            class="form-control"
+                            placeholder="Full Name"
+                            data-i18n="fullName"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row c-mb-10 c-gutter-10">
+                      <div class="col-lg-12 text-center">
+                        <div class="form-group has-placeholder">
+                          <label for="name223355553"
+                            >Telefone<span class="required">*</span></label
+                          >
 
-						<div class="col-lg-4 col-md-6 order-1 order-lg-1  animate" data-animation="fadeInUp">
-							<div class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-90 divider-60"></div>
-							<a href="#home" class="logo">
-								<img src="img/logo_inova.png" alt="">
-								<span class="d-flex flex-column">
-									<span class="logo-text color-darkgrey">Inovatec</span>
-									<span class="logo-subtext">Mais que Tecnologia, inovação</span>
-								</span>
-							</a>
+                          <input
+                            type="text"
+                            aria-required="true"
+                            size="30"
+                            value=""
+                            name="name"
+                            id="name223355553"
+                            class="form-control"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row c-mb-10 c-gutter-10">
+                      <div class="col-sm-12 text-center">
+                        <div class="form-group has-placeholder">
+                          <label for="message22335553">Mensagem</label>
 
-							
-							<p>
-								A INOVATEC é uma empresa focada em fornecer soluções tecnológicas avançadas para a
-								indústria petrolífera e outros setores estratégicos.
-							</p>
-							<a href="#" class="fab fa-facebook-f rounded-icon bg-icon fs-16" title="facebook"></a>
-							<a href="#" class="fab fa-twitter rounded-icon bg-icon fs-16" title="telegram"></a>
-							<a href="#" class="fab fa-linkedin-in rounded-icon bg-icon fs-16" title="linkedin"></a>
-							<a href="#" class="fab fa-instagram rounded-icon bg-icon fs-16" title="instagram"></a>
-							<div class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-60 divider-30"></div>
-						</div>
+                          <textarea
+                            aria-required="true"
+                            rows="6"
+                            cols="45"
+                            name="message"
+                            id="message22335553"
+                            class="form-control"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row c-mb-10 c-gutter-10">
+                      <div class="col-sm-12 mb-0 mt-50">
+                        <div class="form-group">
+                          <input
+                            class="btn btn-gradient big-btn"
+                            type="submit"
+                            value="Submit"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h6 class="fs-12 text-uppercase">
+                  &copy; Copyright
+                  <span class="copyright_year">2024</span> Inovatec Direitos
+                  Reservados
+                </h6>
+              </div>
 
-						<div class="col-lg-4 col-md-12 ls order-3 order-lg-2 footer-special-column text-center animate"
-							data-animation="fadeInUp">
-							<div class="form-wrapper">
-								<form class="contact-form" method="post" action="/">
-									<div class="row c-mb-20">
-										<div class="col-12 form-title text-center form-builder-item">
-											<div class="header title">
-												<h2>Contacto-nos</h2>
-											</div>
-										</div>
-									</div>
-									<div class="row c-mb-10 c-gutter-10">
-										<div class="col-lg-12 text-center">
-											<div class="form-group has-placeholder">
-												<label for="name22335x5553">Nome completo <span
-														class="required">*</span></label>
-												<input type="text" aria-required="true" size="30" value="" name="name"
-													id="name22335x5553" class="form-control" placeholder="Nome completo">
-											</div>
-										</div>
-									</div>
-									<div class="row c-mb-10 c-gutter-10">
-										<div class="col-lg-12 text-center">
-											<div class="form-group has-placeholder">
-												<label for="name223355553">Telefone<span
-														class="required">*</span></label>
+              <div
+                class="col-lg-4 col-md-6 order-2 order-lg-3 animate"
+                data-animation="fadeInUp"
+              >
+                <div
+                  class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-90"
+                ></div>
+                <div class="widget widget_icons_list">
+                  <ul>
+                    <li class="icon-inline">
+                      <div class="icon-styled icon-top bordered round fs-16">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <p>+244 933 681 909</p>
+                    </li>
+                    <li class="icon-inline">
+                      <div class="icon-styled icon-top bordered round fs-16">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <p><a href="#">geral@inovatec.ao</a></p>
+                    </li>
+                    <li class="icon-inline">
+                      <div class="icon-styled icon-top bordered round fs-16">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <p>
+                        Benfica/Via Expressa, Rua Q, Travessa N, Ed. Elarvete,
+                        1º Andar
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-60 divider-30"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
 
-												<input type="text" aria-required="true" size="30" value="" name="name"
-													id="name223355553" class="form-control" placeholder="Telefone">
-											</div>
-										</div>
-									</div>
-									<div class="row c-mb-10 c-gutter-10">
-										<div class="col-sm-12 text-center">
-											<div class="form-group has-placeholder">
-												<label for="message22335553">Mensagem</label>
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
 
-												<textarea aria-required="true" rows="6" cols="45" name="message"
-													id="message22335553" class="form-control"
-													placeholder="Mensagem"></textarea>
-											</div>
-										</div>
-									</div>
-									<div class="row c-mb-10 c-gutter-10">
-										<div class="col-sm-12 mb-0 mt-50">
-											<div class="form-group">
-												<input class="btn btn-gradient big-btn" type="submit"
-													value="Enviar mensagem">
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-							<h6 class="fs-12 text-uppercase">&copy; Copyright <span class="copyright_year">2024</span>
-								Inovatec Direitos Reservados</h6>
-						</div>
+    <!-- Google Map Script -->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&callback=initGoogleMap"
+    ></script>
+  </body>
+  <style>
+    /* Container para centralizar o seletor */
+    .language-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      width: 150px;
+      color: white !important;
+    }
 
-						<div class="col-lg-4 col-md-6 order-2 order-lg-3 animate" data-animation="fadeInUp">
-							<div class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-90"></div>
-							<div class="widget widget_icons_list">
-								<ul>
-									<li class="icon-inline ">
-										<div class="icon-styled icon-top  bordered round fs-16">
-											<i class="fas fa-phone"></i>
-										</div>
-										<p>+244 933 681 909</p>
-									</li>
-									<li class="icon-inline">
-										<div class="icon-styled icon-top bordered round  fs-16">
-											<i class="fas fa-envelope"></i>
+    /* Estilo personalizado para o select */
+    .custom-select {
+      appearance: none; /* Remove o estilo padrão do navegador */
+      appearance: none;
+      width: 100%;
+      border: none !important;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      color: white !important;
+      border-radius: 5px;
+      background-color: #fff;
+      background-image: url("images/bandeira-eua.png"); /* Padrão inicial */
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px 20px;
+      cursor: pointer;
+    }
 
+    .custom-select:focus {
+      outline: none !important;
+      border: none !important;
+    }
 
-										</div>
-										<p><a href="#">geral@inovatec.ao</a></p>
-									</li>
-									<li class="icon-inline">
-										<div class="icon-styled icon-top bordered round  fs-16">
-											<i class="fas fa-map-marker-alt"></i>
-										</div>
-										<p>
-											Benfica/Via Expressa, Rua Q, Travessa N, Ed. Elarvete, 1º Andar
-										</p>
-									</li>
-									
-								</ul>
-							</div>
-							<div class="fw-divider-space divider-xl-160 divider-lg-130 divider-md-60 divider-30"></div>
-						</div>
-					</div>
-				</div>
+    /* .custom-select::after {
+      content: "▼";
+      position: absolute;
+      right: 10px;
+      pointer-events: none;
+    }
 
-			</footer>
+  
+    .custom-select:hover {
+      background-color: #e6e6e6;
+      border-color: #bbb;
+      color: black !important;
+    }
 
+ 
+    
 
-		</div><!-- eof #box_wrapper -->
-	</div><!-- eof #canvas -->
+   
+    .custom-select option {
+      padding: 10px;
+    } */
 
-
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
-
-
-	<!-- Google Map Script -->
-	<script type="text/javascript"
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&callback=initGoogleMap"></script>
-
-</body>
-
+    a.logo .logo-subtext {
+      font-family: "Work Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: capitalize !important;
+    }
+  </style>
 </html>
